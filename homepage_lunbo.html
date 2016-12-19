@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>个人中心-我的消息</title>
+    <link type="text/css" rel="stylesheet" href="css/common.css"/>
+    <link type="text/css" rel="stylesheet" href="css/user_center.css"/>
+    <link type="text/css" rel="stylesheet" href="css/user_center_seen.css"/>
+    <!--顶部样式-->
+</head>
+<style>
+    .card-container {
+        position: relative;
+        margin: 25px auto;
+        width: 400px;
+        height: 200px;
+        -webkit-perspective: 500px;
+        perspective: 500px;
+    }
+    .card img{
+        display: block;
+        width: 400px;
+        height: 200px;
+        overflow: hidden;
+    }
+    .card h1 {
+        font-size: 2em;
+        font-weight: 600;
+        padding: 1em 0 0 1em;
+    }
+    .card-container .card {
+        position: absolute;
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: 100%;
+        -webkit-transition: all .3s ease;
+        transition: all .3s ease;
+        border-radius: 15px;
+        cursor: pointer;
+    }
+    .card-container .card:nth-last-of-type(2) {
+        z-index: 80;
+    }
+    .card-container .card:nth-last-of-type(3) {
+        z-index: 100;
+    }
+    .card-container .card:first-of-type {
+        z-index: 90;
+    }
+    .card-container:hover .left1 {
+        -webkit-transform: scale(0.7) translateX(-125%);
+        transform: scale(0.7) translateX(-125%);
+        box-shadow: 0 2px 12px 0 rgba(0, 0, 0, 0.2);
+    }
+    .card-container:hover .center1 {
+        -webkit-transform: scale(0.9) translateX(0);
+        transform: scale(0.9) translateX(0);
+        box-shadow: 0 2px 12px 0 rgba(0, 0, 0, 0.2);
+    }
+    .card-container:hover .right1 {
+        -webkit-transform: scale(0.7) translateX(125%);
+        transform: scale(0.7) translateX(125%);
+        box-shadow: 0 2px 12px 0 rgba(0, 0, 0, 0.2);
+    }
+    .card-container:hover .last{
+        -webkit-transform: scale(0.7) translateX(125%);
+        transform: scale(0.7) translateX(125%);
+        display: none;
+    }
+    .click_left{
+        width: 10%;
+        height: 100%;
+        position: absolute;
+        z-index: 200;
+        left: -50px;
+    }
+    .click_right{
+        width: 10%;
+        height: 100%;
+        position: absolute;
+        z-index: 200;
+        right: -50px;
+    }
+    .daohang{
+        position: absolute;
+        z-index: 500;
+        left: 150px;
+        bottom: 0;
+    }
+    ol{
+        text-align: center;
+    }
+    li{
+        list-style: none;
+        float: left;
+        border: #fc0;
+        font-size: 30px;
+        background: #fff;
+        cursor: pointer;
+    }
+    ol li.current{
+        background: #0f0;
+    }
+
+</style>
+
+<body>
+<div class="content">
+    <div class="user clearfix">
+        <div class="user_img left">
+            <div class="headimg">
+                <a>编辑资料</a>
+                <img src="images/pic_touxiang.png">
+            </div>
+            <p class="name">子非鱼鱼</p>
+            <p class="motto">做一条有梦想的咸鱼<i></i></p>
+        </div>
+        <div class="user_asset right">
+            <p>我的资产</p>
+            <ul class="clearfix">
+                <li>
+                    <div class="title vertical"><i class="balance"></i><span class="vertical_center">账户余额</span></div>
+                    <div class="text color">￥100.00</div>
+                    <a class="recharge">充值</a>
+                </li>
+                <li>
+                    <div class="title vertical"><i class="cards"></i><span class="vertical_center">我的卡券</span></div>
+                    <div class="text"><span class="t2">可用优惠券</span><span class="color">3</span></div>
+                    <div><span class="t2">已用现金券</span><span class="num">1</span></div>
+                </li>
+                <li>
+                    <div class="title vertical"><i class="integral"></i><span class="vertical_center">我的积分</span></div>
+                    <div class="text color">16</div>
+                    <div class="obtain"><span class="color">*</span>点击查看获取积分规则</div>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <div class="b_title">
+        <ul class="clearfix">
+            <li>我的订单</li>
+            <li>我的收藏</li>
+            <li>收货地址</li>
+            <li class="on">我看过的</li>
+            <li>我发布的</li>
+            <li>我的消息</li>
+        </ul>
+    </div>
+    <div class="b_subtitle cleafix">
+        <span class="left title_click">单品记录</span>
+        <span class="left">方案记录</span>
+        <span class="left">帖子记录</span>
+    </div>
+
+    <div style="width: 500px;height: 250px;border: 1px solid #e6e6e6;overflow: hidden;margin: 0 auto;border-radius: 5px;">
+        <div class="card-container">
+            <div class="click_left"></div>
+            <div class="click_right"></div>
+            <div class="card left1">
+                <img src="images/w1.jpg">
+            </div>
+            <div class="card center1">
+                <img src="images/w2.jpg">
+            </div>
+            <div class="card right1">
+                <img src="images/w3.jpg">
+            </div>
+            <div class="card last" style="display: none;">
+                <h1>last</h1>
+            </div>
+            <div class="daohang">
+                <ol class="clearfix">
+                    <li>1</li>
+                    <li>2</li>
+                    <li>3</li>
+                </ol>
+            </div>
+        </div>
+    </div>
+
+</div>
+</body>
+<script src="js/jquery-3.1.0.min.js"></script>
+<script>
+    //tab切换
+    $(".b_subtitle").delegate("span","click",function(){
+        $(this).css("height","40px").addClass("title_click");
+        $(this).siblings().removeClass("title_click");
+    });
+</script>
+
+<script>
+    $(document).ready(function () {
+        var leftslide=$(".card-container .click_left");
+        var rightslide=$(".card-container .click_right");
+        function lunbo() {
+            leftslide.click(function () {
+                $(".card-container .center1").removeClass("center1").addClass("last");
+                $(".card-container .left1").removeClass("left1").addClass("center1");
+                $(".card-container .right1").removeClass("right1").addClass("left1");
+                $(".card-container .last").removeClass("last").addClass("right1");
+            });
+            rightslide.click(function () {
+                $(".card-container .center1").removeClass("center1").addClass("last");
+                $(".card-container .right1").removeClass("right1").addClass("center1");
+                $(".card-container .left1").removeClass("left1").addClass("right1");
+                $(".card-container .last").removeClass("last").addClass("left1");
+            });
+        }
+        lunbo();
+    })
+</script>
+
+<script>
+    $(document).ready(function(){
+        var _now=0;
+        var oul=$(".myslidetwo");
+        var numl=$(".daohang ol li");
+        var ali=$(".myslide").eq(0).width();
+        numl.click(function(){
+            var index=$(this).index();
+            $(this).addClass("current").siblings().removeClass();
+            oul.animate({'left':-ali*index},500);
+        });
+        setInterval(function(){
+            if(_now==numl.size()-1){
+                _now=0;
+            }else{
+                _now++;
+            }
+            numl.eq(_now).addClass("current").siblings().removeClass();
+            oul.animate({'left':-ali*_now},500);
+        },2000)
+    });
+</script>
+
+</html>

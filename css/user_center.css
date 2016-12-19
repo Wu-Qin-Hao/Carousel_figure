@@ -1,0 +1,216 @@
+
+a{
+    text-decoration: none;
+}
+.b_subtitle{
+    height:44px;
+    background:#f3f3f3;
+    margin-top:30px;
+}
+.b_subtitle span{
+    font-size:18px;
+    height:40px;
+    line-height:40px;
+    text-align:center;
+    width:120px;
+    cursor:pointer;
+}
+.p_content{
+    margin-top:26px;
+}
+.title_click{
+    line-height: 40px;
+    background-color:#fafafa;
+    border-bottom:4px solid #fbdd1e;
+}
+/*头部*/
+
+
+/*
+个人中心用户资料*/
+.user{
+    text-align: center;
+    padding-top: 100px;
+    margin-bottom: 80px;
+}
+.user_img{
+    width: 400px;
+    border-right: 1px solid #e1e1e1;
+}
+.user_img .name{
+    font-size: 28px;
+    color: #000;
+    margin: 35px 0 20px 0;
+}
+.user_img .motto{
+    font-size: 20px;
+    color: #646464;
+}
+.user_img .motto i{
+    background: url("../../images/mk_img/sprite.png");
+}
+.headimg{
+    width: 180px;
+    height: 180px;
+    border-radius: 50%;
+    overflow: hidden;
+    display: inline-block;
+    cursor: pointer;
+    position: relative;
+}
+.headimg a{
+    font-size: 26px;
+    color: #fff;
+    position: absolute;
+    left: 0;
+    right: 0;
+    margin-top: 70px;
+    display: none;
+}
+.headimg:hover a{
+    display: block;
+}
+.headimg:hover{
+    filter:alpha(opacity=80); /*IE滤镜，透明度50%*/
+    -moz-opacity:0.8; /*Firefox私有，透明度50%*/
+    opacity:0.8;/*其他，透明度50%*/
+}
+.headimg img{
+    display: block;
+}
+.user_asset{
+    width: 639px;
+    padding: 0 80px;
+}
+.user_asset p{
+    font-size: 24px;
+    text-align: left;
+    margin: 40px 0;
+}
+.user_asset ul li{
+    float: left;
+    width: 33%;
+    text-align: center;
+}
+.user_asset .title{
+    font-size: 18px;
+    margin: 0 auto;
+}
+.user_asset .title i{
+    width: 60px;
+    height: 60px;
+    display: inline-block;
+    background: url("../../images/mk_img/sprite.png");
+    margin-right: 20px;
+}
+.user_asset .title i.balance{
+    background-position: -128px -154px;
+}
+.user_asset .title i.cards{
+    background-position: -128px -224px;
+}
+.user_asset .title i.integral{
+    background-position: -128px -294px;
+}
+.user_asset .color{
+    font-size: 20px;
+    color: #fe5353;
+}
+.user_asset .num{
+    font-size: 18px;
+}
+.user_asset .text{
+    margin-top: 20px;
+    margin-bottom: 30px;
+}
+.user_asset span.t2{
+    font-size: 16px;
+    color: #646464;
+    margin-right: 30px;
+}
+.recharge{
+    background-color: #ffe300;
+    color: #3c3c3c;
+    font-size: 16px;
+    border-radius: 5px;
+    display: block;
+    width: 80%;
+    margin: 0 auto;
+    padding: 5px 0;
+}
+.obtain{
+    font-size: 14px;
+}
+
+
+
+/*个人中心的订单列表头*/
+.b_title ul{
+    padding:0 20px 10px 20px;
+    border-bottom: 1px solid #e6e6e6;
+}
+.b_title ul li{
+    float: left;
+    font-size: 18px;
+    text-align: center;
+    width: 16.5%;
+    padding: 12px 0;
+    cursor: pointer;
+    border-right: 1px solid #e6e6e6;
+}
+.b_title ul li:last-child{
+    border-right:none;
+}
+.b_title ul li:hover{
+    background-color: #fae300;
+}
+.b_title ul li.on {
+    background-color: #fae300;
+}
+
+/*下一页上一页*/
+.publish_next{
+    width:1200px;
+    margin:0 auto;
+    height:50px;
+}
+.publish_next>div{
+    float:right;
+    margin:0 10px;
+    height:30px;
+}
+.page{
+    line-height:27px;
+    text-align:center;
+}
+.publish_next>div div{
+    height:30px;
+    float:right;
+    line-height:30px;
+    margin-left:10px;
+    text-align:center;
+    margin-right:50px;
+    margin-top:-2px;
+    width:70px;
+    background:#333333;
+    color:white;
+    cursor:pointer;
+}
+.publish_next>div input{
+    width:26px;
+    height:26px;
+    margin:0 10px;
+    padding:0;
+    border:1px solid #636363;
+}
+#next,#last{
+    float:right;
+    width:70px;
+    height:28px;
+    font-size:12px;
+    margin-left:30px;
+    border:none;
+}
+#next{
+    margin-right: 20px;
+}

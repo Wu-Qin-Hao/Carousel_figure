@@ -1,0 +1,58 @@
+/*页面共用样式*/
+body{
+    font-family: "Microsoft YaHei";
+    font-size: 14px;
+    color: #323232;
+    margin: 0;
+    padding: 0;
+}
+.content{
+    width: 1200px;
+    margin: 0 auto;
+}
+a, button{
+    cursor: pointer;
+}
+ol, ul, li, dl, dt, dd {
+    list-style-image: none;
+    list-style-position: outside;
+    list-style-type: none;
+    margin: 0;
+    padding:0;
+}
+h4{
+    font-size: 14px;
+    font-weight: 500;
+}
+p{
+    margin: 0;
+    padding: 0;
+}
+
+/*清除浮动*/
+.clearfix{
+    zoom:1;
+}
+.clearfix:after{
+    clear:both;
+    content:'.';
+    display:block;
+    width: 0;
+    height: 0;
+    visibility:hidden;
+}
+/*浮动*/
+.left{
+    float: left;
+}
+.right{
+    float: right;
+}
+/*用于垂直居中*/
+.vertical{
+    display:table;
+}
+.vertical_center{
+    display:table-cell;
+    vertical-align:middle;
+}
